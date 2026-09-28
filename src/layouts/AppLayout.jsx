@@ -93,7 +93,7 @@ function UserFooter({ collapsed }) {
       // abaikan error logout di server
     }
     logout();
-    toast.success('Anda telah keluar');
+    toast.success('You have been logged out');
     navigate('/login');
   };
 
@@ -209,7 +209,7 @@ export default function AppLayout() {
             <button
               onClick={toggleTheme}
               className="rounded-lg p-2.5 text-slate-500 transition hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800"
-              title="Ganti tema"
+              title="Toggle theme"
             >
               {theme === 'light' ? <Moon className="h-4.5 w-4.5" /> : <Sun className="h-4.5 w-4.5" />}
             </button>
@@ -244,7 +244,7 @@ export default function AppLayout() {
                       }}
                       className="flex w-full items-center gap-2.5 px-4 py-2.5 text-sm text-slate-600 transition hover:bg-slate-50 dark:text-slate-300 dark:hover:bg-slate-800"
                     >
-                      <UserRound className="h-4 w-4" /> Profil Saya
+                      <UserRound className="h-4 w-4" /> My Profile
                     </button>
                     <button
                       onClick={() => {
@@ -254,7 +254,7 @@ export default function AppLayout() {
                       }}
                       className="flex w-full items-center gap-2.5 px-4 py-2.5 text-sm text-rose-500 transition hover:bg-rose-50 dark:hover:bg-rose-500/10"
                     >
-                      <LogOut className="h-4 w-4" /> Keluar
+                      <LogOut className="h-4 w-4" /> Log Out
                     </button>
                   </motion.div>
                 )}
